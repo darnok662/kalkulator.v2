@@ -6,4 +6,11 @@
 * Division
 * Floating point numbers
 
-
+* Possible feature plans:
+  * Erasing entered numbers
+  * Operations history
+  * Funtions like:
+  * Factorial
+  * Expotentation
+  * Square/Cube roots
+***
