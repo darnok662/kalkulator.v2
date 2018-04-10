@@ -9,8 +9,8 @@
 ### Possible feature plans:
   * Erasing entered numbers
   * Operations history
-  * Funtions like:
-  * Factorial
-  * Expotentation
-  * Square/Cube roots
+  * Functions like:
+    * Factorial
+    * Expotentation
+    * Square/Cube roots
 ***
