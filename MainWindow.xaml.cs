@@ -62,12 +62,9 @@ namespace Kalkulator_PS2
         //Function for functional-arithmetical buttons (-, +, *, /)
         private void FunctionalButton_Click(object sender, RoutedEventArgs e)
         {
-
             if (isOperSet)
             {
-                //return;
                 if (tempNumber == 0) float.TryParse(mainText.Text, out tempNumber);
-
                 signLabel.Content = (sender as Button).Content.ToString();
                 oper = SetOper((sender as Button).Content.ToString());
             }
@@ -124,10 +121,12 @@ namespace Kalkulator_PS2
                         break;
 
                     case FunctionalButtons.Multiplication:
+
                         result = result * number;
                         break;
 
                     case FunctionalButtons.Subtraction:
+
                         result = result - number;
                         break;
                 }
@@ -141,12 +140,12 @@ namespace Kalkulator_PS2
                 {
                     mainText.Text = result.ToString();
                 }
-                
                 tempNumber = 0;
                 isOperSet = true;
             }
         }
 
+        //Functions...
         //Function that clears the screen, resets the state and set mainText = 0
         private void FunctionalButtonC_Click(object sender, RoutedEventArgs e)
         {
@@ -154,8 +153,6 @@ namespace Kalkulator_PS2
             signLabel.Content = string.Empty;
             HardResetState();
         }
-
-        //Functions...
         //Function that adds a coma
         private void FunctionalButtonDot_Click(object sender, RoutedEventArgs e)
         {
@@ -171,7 +168,7 @@ namespace Kalkulator_PS2
         {
             isFirstOperation = true;
         }
-        //Like factory reset
+        //Function that's like factory reset
         private void HardResetState()
         {
             result = 0;
@@ -192,7 +189,6 @@ namespace Kalkulator_PS2
                 case "+":
                     return FunctionalButtons.Addition;
 
-
                 case "-":
                     return FunctionalButtons.Subtraction;
 
@@ -201,5 +197,4 @@ namespace Kalkulator_PS2
             }
         }
     }
-
 }
