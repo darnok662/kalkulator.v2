@@ -1,2 +1,9 @@
 # kalkulator.v2
-kalkulator wersja pro
+##Calculator - basic version.
+*Addition
+*Subtraction
+*Multiplication
+*Division
+*Floating point numbers
+
+
