@@ -6,7 +6,7 @@
 * Division
 * Floating point numbers
 
-* Possible feature plans:
+### Possible feature plans:
   * Erasing entered numbers
   * Operations history
   * Funtions like:
