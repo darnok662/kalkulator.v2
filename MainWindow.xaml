@@ -1,0 +1,52 @@
+﻿<Window x:Name="mainWindow" x:Class="Kalkulator_PS2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator_PS2"
+        mc:Ignorable="d"
+        Title="Kondziuras Kalkulator" Height="535" Width="408" MinHeight="535" MinWidth="408" Background="#FF0E0A0A">
+    <Grid x:Name="mainGrid" Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="mainText" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,3,3,3" Padding="3,0" IsEnabled="False" FontSize="48" FontWeight="Bold" TextAlignment="Right" Text="0" Grid.Column="1"/>
+
+        <Button x:Name="functionalButtonC" Grid.Row="1" Grid.Column="0" Margin="3,3" Content="C" FontSize="36" Click="FunctionalButtonC_Click"/>
+        <Button x:Name="functionalButtonDivision" Grid.Row="1" Grid.Column="1" Margin="3,3" Content="/" FontSize="36" Click="FunctionalButton_Click"/>
+        <Button x:Name="functionalButtonMultiplication" Grid.Row="1" Grid.Column="2" Margin="3,3" Content="*" FontSize="36" Click="FunctionalButton_Click"/>
+        <Button x:Name="functionalButtonSubtraction" Grid.Row="1" Grid.Column="3" Margin="3,3" Content="-" FontSize="36" Click="FunctionalButton_Click"/>
+
+        <Button x:Name="numerButton7" Grid.Row="2" Grid.Column="0" Margin="3,3" Content="7" FontSize="36" Click="NumberButton_Click"/>
+        <Button x:Name="numerButton8" Grid.Row="2" Grid.Column="1" Margin="3,3" Content="8" FontSize="36" Click="NumberButton_Click"/>
+        <Button x:Name="numerButton9" Grid.Row="2" Grid.Column="2" Margin="3,3" Content="9" FontSize="36" Click="NumberButton_Click"/>
+        <Button x:Name="functionalButtonAddition" Grid.Row="2" Grid.Column="3" Grid.RowSpan="2" Margin="3,3" Content="+" FontSize="36" Click="FunctionalButton_Click"/>
+
+        <Button x:Name="numerButton4" Grid.Row="3" Grid.Column="0" Margin="3,3" Content="4" FontSize="36" Click="NumberButton_Click"/>
+        <Button x:Name="numerButton5" Grid.Row="3" Grid.Column="1" Margin="3,3" Content="5" FontSize="36" Click="NumberButton_Click"/>
+        <Button x:Name="numerButton6" Grid.Row="3" Grid.Column="2" Margin="3,3" Content="6" FontSize="36" Click="NumberButton_Click"/>
+
+        <Button x:Name="numerButton1" Grid.Row="4" Grid.Column="0" Margin="3,3" Content="1" FontSize="36" Click="NumberButton_Click"/>
+        <Button x:Name="numerButton2" Grid.Row="4" Grid.Column="1" Margin="3,3" Content="2" FontSize="36" Click="NumberButton_Click"/>
+        <Button x:Name="numerButton3" Grid.Row="4" Grid.Column="2" Margin="3,3" Content="3" FontSize="36" Click="NumberButton_Click"/>
+        <Button x:Name="functionalButtonCalculation" Grid.Row="4" Grid.Column="3" Margin="3,3" Grid.RowSpan="2" Content="=" FontSize="36" Click="EqualsButton_Click"/>
+
+        <Button x:Name="numerButton0" Grid.Row="5" Grid.Column="0" Margin="3,3" Grid.ColumnSpan="2" Content="0" FontSize="36" Click="NumberButton_Click"/>
+        <Button x:Name="functionalButtonDot" Grid.Row="5" Grid.Column="2" Margin="3,3" FontSize="36" Content="." Click="FunctionalButtonDot_Click"/>
+        <Label x:Name="signLabel" Content="" Margin="0,-27,5,0" VerticalAlignment="Top" IsEnabled="False" FontWeight="Bold" Foreground="#FFD80000" FontSize="72" Height="93" HorizontalAlignment="Right" Width="61"/>
+
+
+    </Grid>
+</Window>
