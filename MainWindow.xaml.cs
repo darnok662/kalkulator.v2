@@ -99,8 +99,8 @@ namespace Kalkulator_PS2
             }
             else
             {
-                if(tempNumber !=0) float.TryParse(mainText.Text, out number);
-
+                if(tempNumber != 0) float.TryParse(mainText.Text, out number);
+                if(!isOperSet) float.TryParse(mainText.Text, out number);
                 switch (oper)
                 {
                     case FunctionalButtons.Addition:
@@ -134,6 +134,7 @@ namespace Kalkulator_PS2
                 if (divisionByZero)
                 {
                     mainText.Text = "NaN";
+                    result = 0;
                     divisionByZero = false;
                 }
                 else if (!mainText.Text.Equals(result.ToString()))
